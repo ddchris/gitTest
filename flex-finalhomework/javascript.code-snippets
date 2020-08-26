@@ -1,0 +1,62 @@
+{
+	"For_Loop": {
+		"prefix": "for",
+		"scope": "javascript,typescript",
+		"body": [
+			"for (const ${2:element} of ${1:array}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "For Loop"
+	},
+	"keyValue": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1: ', $1$2)"
+		],
+		"description": "log with ''"
+	},
+	"Print to console.dir": {
+		"prefix": "dir",
+		"body": [
+			"console.dir($1, $2);"
+		],
+		"description": "dir output to console"
+	},
+	"Print to console.clear": {
+		"prefix": "clear",
+		"body": [
+			"console.clear();$1",
+		],
+		"description": "clear to console"
+	},
+	"JSON parse": {
+		"prefix": "jp",
+		"body": [
+			"JSON.parse($1)",
+		],
+		"description": "JSON parse"
+	},
+	"JSON stringify": {
+		"prefix": "js",
+		"body": [
+			"JSON.stringify($1)",
+		],
+		"description": "JSON stringify"
+	},
+	"exportDefaault": {
+		"prefix": "ed",
+		"body": [
+			"export default{$1}",
+		],
+		"description": "exportDefaault"
+	},
+	"Print to console.table": {
+		"prefix": "tab",
+		"body": [
+			"console.table($1);",
+			"$2"
+		],
+		"description": "table output to console"
+	}
+}
